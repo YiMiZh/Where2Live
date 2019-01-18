@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+.border-radius {
+    border-radius: 5px;
+}
+body {
+    background: #d1d1e0;
+    background-size: cover;
+    background-position: 60%;
+    font-family: 'Roboto';
+    color: #fff;
+}
+a{
+    font-family: 'Roboto';
+}
+
+.portrait {
+    margin-top: 60px;
+    height: auto;
+    width: auto;
+}
+
+#profilename{
+    padding: 10px;
+}
+
+#map {
+    margin-top: 40px;
+    height: 300px;
+    width: 100%;
+}
+
+.tabs,
+.form {
+    width: 390px;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+/* Column container */
+.row {
+    /* width: 1170px; */
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin-top: 0px;
+    height: 940px;
+    margin-left: 150.5px;
+    margin-right: 150.5px;
+    margin-bottom: 20px,
+}/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background: #eee;
+    padding: 20px;
+}
+
+.tabs {
+    background: #fff;
+    height: 60px;
+    margin: 25px auto 10px;
+    color: #000;
+}
+.form {
+    height: 300px;
+    margin: 25px auto;
+    margin-top: 0;
+    /* background: #d1d1e0; */
+}
+
+/* Main column */
+.container {
+    /* border-left: 1px; 
+    border-left-color:black; */
+    margin-top: 0px;
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    /* background-color: pink; */
+    padding: 20px;
+}
+.input {
+    margin: 20px 0;
+    border: solid 1px #fff;
+    /* background: pink; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px; 
+}
+.containerHead {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+    background: #2DA9E1;
+}
+.sideHead {
+    text-align: center;
+    margin-bottom: 0px;
+    background: #FAA43D;
+}
+
+textarea {
+    background: #fff;
+    border: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px; 
+}
+
+input.main-form {
+    border: 1px solid #fff;
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #000;
+    background: #fff;
+    font-size: 16px;
+}
+input[type="text"], textarea {
+    color : black;
+
+}
+button{
+    margin-right: 5px;
+    float: left;
+    color:#8686ac;
+    background-color:#fff;
+    border: 1px solid #fff;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+input[type="button"] {
+    margin-right: 5px;
+    float:left;
+}
+
+#submitbutton{
+    margin-top: 20px;
+    color:#fff;
+}
+#backbutton{
+    margin-bottom: 80px;
+    color:#fff;
+}
+#buttonback1{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    color:#fff;
+}
+p.thick{
+    margin-right: 5px;
+    float: left;
+    font-weight: 800;
+}
+.input a {
+    color: #fff;
+}
+.form input.btn {
+    background: #d1d1e0;
+    border: #fff;
+}
+.copyright.py-4.text-center.text-white {
+    color: #333;
+    background: #fff;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    height: 30px;
+    justify-content: center;
+}
+h1{
+    margin-top: 60px;
+    text-align:center;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+#housetype{
+    color: #333333;
+    font-size: large;
+    font-family: "Adobe Arabic";
+}
+
+select#soflow, select#soflow-color {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    color: #555;
+    font-size: inherit;
+    margin: 20px;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 150px;
+}
+
+select#soflow-color {
+    color: #fff;
+    background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#779126, #779126 40%, #779126);
+    background-color: #779126;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding-left: 15px;
+}

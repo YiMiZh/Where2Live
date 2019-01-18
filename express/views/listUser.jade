@@ -1,0 +1,60 @@
+doctype html
+html(lang='en')
+    head
+        title Where2Live: Housing Information
+
+        meta(charset='UTF-8')
+
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel="stylesheet prefetch", href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+
+        link(rel="stylesheet prefetch", href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css")
+
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+        link(rel='stylesheet', href='/css/style_ListUsers.css')
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+        script(src="/js/listUser.js")
+
+
+    body
+        // nav
+        include ./partials/navbar.jade
+        // The big banner image
+
+        .portrait
+            img(src="/sources/banner.png")
+
+
+
+        .main
+            h2 Current Users
+                #users
+            each val in users
+                .user
+                    table.table_in_user
+                        tbody
+                            tr
+                                td
+                                    p
+                                        | Name:
+                                        span.bold= val.username
+                                    p
+                                        | UserID:
+                                        span.bold= val.id
+                                    p
+                                        | Phone:
+                                        span.bold= val.telephone
+                                    p
+                                        | Email:
+                                        span.bold= val.email
+                                td
+                                    img.UserProfilePicture(src=val.profilepic)
+                                td
+                                    a(href='/userprofile/'+val.id) details
+                                    br
+                                    form(action="/delUser", method="post")
+                                        input.delete(id= val.id, type='submit', value='Delete', name= val.id, onclick='delUser()')
+
+        .footer
+            small Copyright &copy; CSC309 TEAM 2018

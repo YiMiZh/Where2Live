@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+.border-radius {
+    border-radius: 5px;
+}
+body {
+    background: black;
+    background-size: cover;
+    background-position: 50%;
+    font-family: 'Roboto';
+    color: #fff;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.tabs,
+.form {
+    width: 390px;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+.tabs {
+    background: #000000;
+    height: 60px;
+    margin: 25px auto 10px;
+    color: #000;
+}
+.form {
+    height: 300px;
+    margin: 25px auto;
+    background: #000;
+}
+li {
+    display: block;
+    width: 40%;
+    height: 30px;
+    vertical-align: middle;
+    float: left;
+    margin: 15px;
+    padding: 0;
+    border-right: 1px solid #fff;
+}
+li:last-child {
+    border: none;
+}
+#login,
+#register{
+    width: 40%;
+    margin-left: 30%;
+}
+li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+}
+li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+li a:active {
+    color: #fff;
+    text-decoration: none;
+}
+li a:link {
+    color: #fff;
+    text-decoration: none;
+}
+.container {
+    margin-top: 20px;
+}
+.input {
+    margin: 20px 0;
+}
+input.main-form {
+    border: 1px solid #a0b3b0;
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background: #000;
+    font-size: 16px;
+}
+input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: top;
+}
+.input a {
+    color: #fff;
+}
+.form input.btn {
+    background: #000000;
+    border: none;
+}

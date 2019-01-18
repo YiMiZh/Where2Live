@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.portrait {
+    margin-top: 60px;
+    height: auto;
+    width: auto;
+    margin-bottom: 0px;
+}
+
+/* Main column */
+.main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.main h2 {
+    text-align: center;
+    background: #FAA43D;
+}
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    /* background: #ddd; */
+}
+
+
+
+
+.user span {
+  font-weight: 525;
+}
+
+.user {
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 1000px;
+  margin-top: 2px;
+  margin-left: 200px;
+}
+
+.user img {
+  /* Add properties below */
+  max-width: 200px;
+  margin-left: 30px;
+  margin-top: 2px;
+  border-radius: 50%;
+  /*float: right;*/ 
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border-collapse: collapse;
+  width: 400px;
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}

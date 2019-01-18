@@ -1,0 +1,77 @@
+doctype html
+html(lang='en')
+    head
+        title Where2Live: Housing Information
+
+        meta(charset='UTF-8')
+
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel="stylesheet prefetch", href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+
+        link(rel="stylesheet prefetch", href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css")
+
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+        link(rel='stylesheet', href='/css/style_housingInfo.css')
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+        //link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous")
+
+
+    body
+        // nav
+        include ./partials/navbar.jade
+        // The big banner image
+
+        .portrait
+            img(src="/sources/banner.png")
+
+        .row
+            .side
+                div.card
+                    img.card-img-top(src=info.user_pic alt="Card image cap")
+                    div.card-body
+                        h5.card-title #{info.username}
+                        p.card-text #{info.user_des}
+                        a.btn.btn-primary(href='/userprofile/'+info.posterid) detail
+                
+                .h3 Position
+
+                #googleMap()
+
+                h5#address(acode=info.postcode) #{info.location} #{info.postcode}
+
+                h2 expect monthly rent:
+
+                p#rent
+                    | $#{info.monthlyrate}
+                
+                h2 #{info.type}
+
+                if (localUser.admin == 1 || localUser.id == info.posterid)
+                    div#house_id(hidden='')
+                       | #{info.house_id}
+                    div#posterid(hidden='')
+                       | #{info.posterid}
+                    form#delForm(action="/delHome", method="post")
+                        input(id= "#{info.house_id}", name="delete", type="submit", value="delete", onclick="delHome()")
+
+            .main
+                h2 #{info.name}
+                h1 Detail
+                //- h2 hello
+                img.roomPic(src=info.picture, alt='Toronto_Housing')
+                h5 type
+                p #{info.type}
+                h2 description
+
+                p#description
+                    | #{info.description}
+
+
+                //ul contact
+                //    li= info.email
+                //    li= info.telephone
+        .footer
+            small Copyright &copy; CSC309 TEAM 2018
+    script(type="text/javascript" src="/js/houseinfo.js")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJJov5XxnLS583GuCIqAmq46vNULbtLwI&callback=initMap")

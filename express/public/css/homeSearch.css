@@ -1,0 +1,86 @@
+
+
+/* Column container */
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+#home_search > input.btn.btn-primary{
+    margin-left: 10px;
+}
+img {
+    width: 100%;
+}
+
+.home span {
+    font-weight: 525;
+}
+
+.home {
+    border: 1px solid black;
+    padding: 10px;
+    max-width: 1000px;
+    margin-top: 2px;
+}
+
+.home img {
+    /* Add properties below */
+    max-width: 300px;
+    margin-left: 150px;
+    margin-top: 2px;
+    /*float: right;*/
+}
+
+table, td, th {
+    border-collapse: collapse;
+}
+
+.navbar a{
+    color: black;
+}

@@ -1,0 +1,73 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+
+        title Where2Live:New Post
+
+
+        link(rel='stylesheet prefetch', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+        link(rel='stylesheet prefetch', href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+
+        link(rel='stylesheet', href='/css/newrent.css')
+        link(rel="stylesheet", href="/css/index_style.css")
+
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+        style.
+            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    body
+        include ./partials/navbar.jade
+        // nav
+        .portrait
+            img(src="/sources/banner.png")
+        // items
+
+        .row
+            .side
+                .sideHead
+                    h2 Location
+
+                #map
+
+            .container
+                .containerHead
+                    h2 House Info
+                .col-sm-12
+                    form#projectinfo.form.row(action='/posting' method='post')
+                        .col-sm-12.container
+                            .input
+                                input.main-form.animated.bounceInDown(type='text', name='title', placeholder='Title', required='')
+
+                            .input
+                                input.main-form.animated.bounceInDown(type='text', name='location', placeholder='Location', required='')
+
+                            .input
+                                input#postcode.main-form.animated.bounceInDown(type='text', name='postcode', placeholder='Postal Code', required, value='M5S 1A1')
+
+                            .input
+                                input.main-form.animated.bounceInDown(required, name='price', placeholder='Price')
+
+                            .input
+                                input.main-form.animated.bounceInDown(name='url', placeholder='Link to your photo')
+
+                            .input
+                                textarea.main-form.animated.bounceInDown(required, rows='10', cols='48', name='short_des', placeholder='Short Description')
+                            .input
+                                textarea.main-form.animated.bounceInDown(required, rows='10', cols='48', name='long_des', placeholder='Description')
+
+                            select#soflow.main-form.animated.bounceInDown(name="type")
+                                option Rent Type
+                                option House
+                                option Condo
+                            input.main-form.btn.animated.bounceInDown(type="submit", name="submit", value="Post Now")
+
+        .copyright.py-4.text-center.text-white
+                small Copyright &copy; CSC309 TEAM 2018
+        script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJJov5XxnLS583GuCIqAmq46vNULbtLwI&callback=initMap"
+    async defer)
+
+        script(src='js/newrent.js')

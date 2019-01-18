@@ -1,0 +1,242 @@
+.yourplace h5,.yourplace-grid h5 {
+    font-size: 1.1em;
+    text-transform: capitalize;
+    font-family: 'PT Sans', sans-serif;
+    color: #777;
+}
+.yourplace-grid {
+    padding: 0 10px;
+    float: left;
+    width: 50%;
+}
+.yourplace-grids1 {
+    margin-top: 1em;
+}
+
+.sel2 {
+    width: 97%;
+    padding: .3em 1em;
+    font-size: 1em;
+    margin: 1em 0;
+    outline: none;
+    text-transform: capitalize;
+    border: 1px solid #BBBBBB;
+}
+
+.properties-top h4,.properties-middle h4,.feature h4{
+    font-size: 1.5em;
+    font-family: 'Righteous', cursive;
+    color: #fff;
+    padding: 1em 0;
+    background: #FAA43D;
+    margin-bottom: 1em;
+}
+.properties-top {
+    margin-top: 2em;
+}
+.properties-top li {
+    list-style: none;
+    line-height: 2.5em;
+    font-size: 1.2em;
+    border-bottom: 1px solid #BFBBBB;
+    margin-right: 7px;
+}
+.properties-top ul {
+    margin: 2em 0;
+    list-style: none;
+    line-height: 2.5em;
+    font-size: 1em;
+    border-bottom: 1px solid #BFBBBB;
+    margin-right: 7px;
+}
+.properties-top i {
+    font-size: 1.2em;
+    margin-right: 7px;
+}
+.properties-top img {
+    width: 100%;
+}
+.properties-top p {
+    font-size: 1em;
+    line-height: 1.8em;
+    color: #777;
+    padding: 0 1em;
+    text-align: left;
+}
+.yourplace-grid {
+    padding: 0 10px
+}
+.yourplace-grids1 {
+    margin-top: 1em;
+}
+
+.search1 input[type="submit"] {
+    width: 51%;
+    background: #2da9e1;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: .4em;
+    margin-top: 1em;
+}
+.feature {
+    margin: 3em 0;
+    text-align: center;
+}
+.feature-top a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #000;
+}
+.feature-top p{
+    font-size: 1em;
+    line-height: 1.8em;
+    text-decoration: none;
+    color: #777;
+}
+.feature-top h5 {
+    border-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px
+}
+.userprofile-left {
+    float: left;
+    width: 30%;
+    background: #eee;
+    text-align: center;
+}
+
+.about-me {
+    margin-top: 3em;
+}
+
+.about-me h4{
+    font-size: 2em;
+    font-family: 'Righteous', cursive;
+    color: #fff;
+    text-align: center;
+    background: #FAA43D;
+    color: #000;
+}
+
+.about-me p {
+    font-size: 1em;
+    line-height: 1.8em;
+    color: #777;
+    padding: .8em 0;
+}
+.feature-top img {
+    margin: 0 auto;
+}
+
+.userprofile-right {
+    float: left;
+    width: 70%;
+    padding-left: 20px;
+}
+
+.profile-right {
+    margin-left: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+    width: 55%;
+    margin-top: 3em;
+}
+
+.profile-right a {
+    color: #2DA9E1;
+    text-decoration:none;
+}
+
+.profile-right i {
+    font-size: 1.2em;
+    margin-right: 7px;
+    color: #777;
+}
+
+.profile-right li {
+    line-height: 2.5em;
+    list-style: none;
+    margin-left: 10px;
+    color: #777;
+    text-decoration:none;
+    font-size: 1.2em;
+    margin-right: 7px;
+}
+
+.profile-right h5 {
+    font-size: 1.5em;
+    font-family: 'Righteous', cursive;
+    color: #fff;
+    background: #2DA9E1;
+    padding: .8em 1em;
+}
+
+.profile-right ul {
+    line-height: 2.5em;
+    list-style: none;
+    color: #777;
+    background: #eee;
+    text-decoration:none;
+    font-size: 1.2em;
+    margin-right: 7px;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.profile-left {
+    float: left;
+    width: 40%;
+}
+
+.profile-left img {
+    margin: auto 10px;
+    border-radius: 50%;
+}
+
+.profile-left h4 {
+    font-size: 2em;
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #000;
+}
+.profile-left p {
+    font-size: 1em;
+    text-transform: capitalize;
+    color: #777;
+    line-height: 2em;
+    padding: .5em 0;
+}
+.profile-left p input {
+    background: #fff;
+}
+.profile-left a {
+    text-decoration:none;
+    color: #2DA9E1;;
+}
+.button, input {
+    color: #000000;
+    background: #eee;
+}
+
+#newdes {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+#profilepiclink {
+    width: 100%;
+    height: 30px;
+}
+

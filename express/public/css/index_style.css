@@ -1,0 +1,128 @@
+body{
+    background: white;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.portrait {
+    margin-top: 60px;
+    height: auto;
+    width: auto;
+    margin-bottom: 0px;
+}
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 340px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+    .grid {
+        max-width: 1200px;
+    }
+}
+.card {
+    position: relative;
+    flex: 1 1 100%;
+    margin: 31px 0;
+    padding: 20px;
+    background: white;
+    z-index: 0;
+}
+@media screen and (min-width: 768px) {
+    .card {
+        flex-basis: calc(33.33% - (62px + 40px));
+        margin: 0 31px;
+    }
+}
+.list-group-item{
+    border: none;
+}
+.card__thumb {
+    overflow: hidden;
+}
+
+.card__img {
+    margin: -20px -20px 0;
+}
+.card__img img {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 150px;
+    border: 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.card__desc {
+    margin-top: 25px;
+}
+
+.card__desc ul {
+    margin:1px;
+}
+.card__desc ul li {
+    line-height:0;
+    margin:1px
+}
+
+#offering {
+    color: green;
+}
+
+#wanted {
+    color: red;
+}
+
+#roommate {
+    color: #fd7e14;
+}
+
+h6 {
+    color: green;
+}
+
+h4 {
+    color: #fd7e14;
+}
+
+h5 {
+    color: brown;
+}
+
+
+.card__one {
+    transition: transform .5s;
+}
+.card__one::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+}
+.card__one:hover, .card__one:focus {
+    transform: scale3d(1.006, 1.006, 1);
+}
+.card__one:hover::after, .card__one:focus::after {
+    opacity: 1;
+}
+
+.copyright.py-4.text-center.text-white {
+    margin-top: 15px;
+}
+
+.title {
+    margin-left: 45px;
+}

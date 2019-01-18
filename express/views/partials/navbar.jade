@@ -1,0 +1,52 @@
+link(rel="stylesheet", href="/css/navbar.css")
+scr(src="/js/navbar.js")
+nav.navbar.navbar-default.banner
+    .container-fluid
+        .navbar-header
+            // <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            // <span class="sr-only">Toggle navigation</span>
+            // <span class="icon-bar"></span>
+            // <span class="icon-bar"></span>
+            // <span class="icon-bar"></span>
+            // </button>
+            a.navbar-brand(href="/index") Where2Live
+
+            if user
+                a.navbar-brand(href="/posting") New Post
+
+                if localUser.admin
+                    a.navbar-brand(href="/listUser") Search User
+
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                ul#navright.nav.navbar-right.navbar-nav-primary
+                    li
+                        form.search-container(action="/homeSearch", method="post")
+                            input#search-box.search-box(type="text",name="keyword" ,placeholder="Search a location")
+
+                            label(for="search-box")
+                                span.glyphicon.glyphicon-search.search-icon(onclick="searchHome()")
+
+                            input#search-submit(type="submit")
+
+                    if user
+                        li.dropdown
+                            a.dropdown-toggle(data-toggle='dropdown', href='#')#emailadd
+                                |#{user}
+                                span.caret
+                            ul.dropdown-menu
+                                li
+                                    a(href='/logout') Logout
+
+                                li
+                                    a(href='/userprofile/#{localUser.id}') My profile
+
+                                li
+                                    a(href='/changepassword') Change password
+
+                    else
+                        li
+                            a#login(href="/login") Login
+script.
+    function searchHome() {
+        let a = event.target.parentNode.parentNode.submit()
+        console.log(a)}
